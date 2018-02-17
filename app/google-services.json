@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "388084576579",
+    "firebase_url": "https://combocard-a7f3d.firebaseio.com",
+    "project_id": "combocard-a7f3d",
+    "storage_bucket": "combocard-a7f3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388084576579:android:adda5c808cd1574f",
+        "android_client_info": {
+          "package_name": "com.shopspreeng.combocard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388084576579-71b3ccjg37kc9a49vnkapblgipskjph7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopspreeng.combocard",
+            "certificate_hash": "4420e31ef7430e1cf3b665feb45a1b9718c2e0f7"
+          }
+        },
+        {
+          "client_id": "388084576579-feevsf93o8uc1ug1vqqtur89gf3qrs5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4eCHfebuYwPrqXup9F3yAcM2l66652OQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388084576579-feevsf93o8uc1ug1vqqtur89gf3qrs5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
