@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.github.nkzawa.socketio.client.IO;
 import com.github.nkzawa.socketio.client.Socket;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.net.URISyntaxException;
 
@@ -15,6 +16,7 @@ public class ComboCardApp extends Application {
 
     private static ComboCardApp mInstance;
     public Socket mSocket;
+    public FirebaseAuth firebaseAuth;
 
     {
         try {
@@ -30,7 +32,9 @@ public class ComboCardApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
         mInstance = this;
         mSocket.connect();
+        firebaseAuth.getInstance().getCurrentUser();
     }
 }

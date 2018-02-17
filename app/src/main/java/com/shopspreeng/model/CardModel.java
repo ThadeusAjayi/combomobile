@@ -35,4 +35,12 @@ public class CardModel {
         return gson.toJson(card);
     }
 
+    @Override
+    public String toString() {
+        return "CardModel{" +
+                "cardNum=" + cardNum +
+                ", cardName='" + cardName + '\'' +
+                ", cardResource=" + cardResource +
+                '}';
+    }
 }

@@ -1,4 +1,4 @@
-package com.shopspreeng;
+package com.shopspreeng.Utils;
 
 import com.shopspreeng.combocard.R;
 import com.shopspreeng.model.CardModel;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class CardUtils {
 
-    public class SingleCard {
+    public static class SingleCard {
 
         private int count;
 
@@ -26,7 +26,7 @@ public class CardUtils {
         int robe[] = {-4, 3, -2};
         int pearl[]  = {-4, -5, 4};
 
-        ArrayList<CardModel> singleCard = new ArrayList<>();
+        public ArrayList<CardModel> singleCard = new ArrayList<>();
 
         public SingleCard () {
 
@@ -73,6 +73,7 @@ public class CardUtils {
             }
 
         }
+
         public int setmCardResource(String cardText) {
             switch (cardText) {
                 case "amulet":
@@ -101,7 +102,7 @@ public class CardUtils {
         }
     }
 
-    public class CompoundCard {
+    public static class CompoundCard {
 
         private int count;
 
@@ -117,7 +118,7 @@ public class CardUtils {
         int bay[] = {1, 5, 3, -4, 3, -1, 4};
         int pepper[] = {-1, 2, -3, 4, -3, 2, -5};
 
-        ArrayList<CardModel> compound = new ArrayList<CardModel>();
+        public ArrayList<CardModel> compound = new ArrayList<CardModel>();
 
 
         public CompoundCard() {

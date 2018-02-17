@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.shopspreeng.combocard"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -28,5 +28,19 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.github.nkzawa:socket.io-client:0.3.0'
-    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.firebaseui:firebase-ui-auth:3.2.1'
+    implementation 'com.facebook.android:facebook-login:[4,5)'/*
+    compile('com.twitter.sdk.android:twitter:3.2.0@aar') {
+        transitive = true
+    }*/
+
+
 }
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

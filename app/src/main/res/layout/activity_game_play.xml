@@ -1,10 +1,26 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
+    android:orientation="vertical"
     tools:context="com.shopspreeng.combocard.GamePlay">
+
+    <include
+        android:id="@+id/two_players"
+        layout="@layout/layout_two_players"
+        android:visibility="visible"/>
+
+    <include
+        android:id="@+id/three_players"
+        layout="@layout/layout_three_players"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/four_players"
+        layout="@layout/layout_four_players"
+        android:visibility="gone"/>
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -13,4 +29,4 @@
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
